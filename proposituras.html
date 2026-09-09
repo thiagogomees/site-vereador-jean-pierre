@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposituras | Vereador Jean Pierre – Avante Campina Grande</title>
+<meta name="description" content="Projetos de lei, requerimentos e indicações do Vereador Jean Pierre - Avante Campina Grande PB. Acompanhe, filtre e sugira propostas.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--navy:#0a1f3d;--blue:#1450a0;--sky:#2ea3e8;--orange:#ff6a00;--bg:#f4f6fb;--card:#fff;--text:#1a2340;--muted:#5b6b8c;--line:#e3e9f5;--radius:16px}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text)}
+h1,h2,h3{font-family:'Archivo',sans-serif}.container{max-width:1160px;margin:0 auto;padding:0 22px}a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 22px;max-width:1160px;margin:0 auto}
+.brand{display:flex;gap:12px;align-items:center}.brand img{height:52px}.brand b{display:block;line-height:1}.brand span{font-size:.78rem;color:var(--muted)}
+.menu{display:flex;gap:18px;font-weight:600;font-size:.9rem;align-items:center}.btn{display:inline-flex;gap:8px;align-items:center;background:var(--orange);color:#fff;font-weight:800;padding:11px 18px;border-radius:12px;border:0;cursor:pointer}
+.hero{background:linear-gradient(180deg,#0a1f3d,#102e5c);color:#fff;padding:44px 0}.hero h1{font-size:clamp(1.8rem,3.5vw,2.6rem)}.hero p{color:#cbd8f0;max-width:700px;margin-top:8px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}input,select,textarea{border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-family:inherit;font-size:.92rem;background:#fff;width:100%}
+.toolbar{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:grid;grid-template-columns:1fr 220px 200px;gap:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 30px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:10px}
+.tag{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:5px 10px;border-radius:999px;display:inline-block;width:fit-content}
+.t-pl{background:#e8f7ef;color:#0a6b45}.t-req{background:#eef4ff;color:var(--blue)}.t-ind{background:#fff3e8;color:#b94a00}
+.status{font-size:.78rem;font-weight:700}.st-tramite{color:#b94a00}.st-aprovado{color:#0a6b45}.st-protocolo{color:var(--blue)}
+.card h3{color:var(--navy);font-size:1.05rem}.card p{color:var(--muted);font-size:.9rem}.card .foot{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.btn-outline{background:#fff;color:var(--navy);border:2px solid var(--navy)}.small{padding:8px 12px;font-size:.85rem}
+section{padding:36px 0}footer{background:#071530;color:#aebcd9;padding:30px 0;margin-top:20px;font-size:.85rem}
+.form-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:12px}
+@media(max-width:900px){.toolbar,.grid{grid-template-columns:1fr}.menu{display:none}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="index.html"><img src="assets/logo-avante.svg" alt="Avante 70 modelo"><div><b>Jean Pierre</b><span>Vereador • Avante 70 • Campina Grande/PB</span></div></a>
+<nav class="menu"><a href="index.html">Início</a><a href="proposituras.html"><b>Proposituras</b></a><a href="noticias.html">Notícias</a><a href="index.html#galeria">Fotos</a><a href="index.html#contato" class="btn">Fale com o vereador</a></nav>
+</div></header>
+
+<div class="hero"><div class="container">
+<p style="font-size:.8rem;letter-spacing:.1em;font-weight:800;color:#ffb37a">TRANSPARÊNCIA LEGISLATIVA • SAPL CMCG</p>
+<h1>Proposituras do mandato</h1>
+<p>Projetos de lei, requerimentos e indicações <strong>modelo</strong> para os primeiros 90 dias — inspirados na atuação na SECTI, no Procon e nas demandas dos bairros. Toda matéria oficial tramita no <a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">SAPL da Câmara</a>.</p>
+</div></div>
+
+<section><div class="container">
+<div class="toolbar">
+<input id="busca" placeholder="🔍 Buscar por palavra, bairro, tema... (ex.: LED, Procon, juventude)" oninput="filtrar()">
+<select id="tipo" onchange="filtrar()"><option value="">Todos os tipos</option><option>Projeto de Lei</option><option>Requerimento</option><option>Indicação</option></select>
+<select id="status" onchange="filtrar()"><option value="">Todos os status</option><option>Em tramitação</option><option>Aprovado</option><option>Protocolado</option></select>
+</div>
+<div class="grid" id="lista"></div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px" class="duo">
+<div class="form-box">
+<h3>Sugira uma proposta ao gabinete</h3>
+<p style="color:var(--muted);font-size:.9rem">Sua ideia pode virar requerimento ou PL. Descreva com rua/bairro e foto se possível.</p>
+<label>Seu nome</label><input id="s-nome" placeholder="Seu nome">
+<label>Proposta</label><textarea id="s-texto" rows="4" placeholder="Ex.: Troca de iluminação por LED na Rua..."></textarea>
+<button class="btn" onclick="sugerir()"><i class="fa-brands fa-whatsapp"></i> Enviar sugestão pelo WhatsApp</button>
+<p id="s-ok" style="display:none;color:#0a6b45;font-size:.88rem">Abrimos o WhatsApp do gabinete com sua sugestão. Número configurado em <code>assets/config.js</code>.</p>
+</div>
+<div class="form-box" style="background:linear-gradient(135deg,#0a1f3d,#1450a0);color:#fff;border:0">
+<h3 style="color:#fff">Como acompanhar de verdade</h3>
+<ol style="margin-left:18px;display:grid;gap:10px;font-size:.92rem;color:#dbe6ff">
+<li>Acesse o <b>SAPL</b>: sapl.campinagrande.pb.leg.br → Matérias Legislativas → buscar “Jean Pierre”.</li>
+<li>Veja <b>pauta e atas</b> das sessões de terça e quarta no Portal CMCG.</li>
+<li>Assista à <b>TV Câmara ao vivo</b> no YouTube @CamaraCGOficial.</li>
+<li>Cobre prazos: requerimento aprovado → Executivo tem que responder/executar.</li>
+</ol>
+<a class="btn" style="margin-top:8px" href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Abrir SAPL oficial</a>
+</div>
+</div>
+</div></section>
+
+<footer><div class="container">© 2026 Gabinete Modelo Vereador Jean Pierre • Avante 70 • Campina Grande-PB • Matérias abaixo são <b>modelos demonstrativos</b>. • <a href="index.html" style="text-decoration:underline">Voltar ao início</a></div></footer>
+
+<script src="assets/config.js"></script>
+<script>
+const CFG = (typeof SITE_CONFIG !== 'undefined') ? SITE_CONFIG : { whatsapp: "5583999999999" };
+const DADOS=[
+{t:"Projeto de Lei",n:"PL 001/2026 (modelo)",titulo:"QR Code do Procon em todos os comércios",desc:"Apoio ao PL 625/2026 de Luciano Breno: obriga afixação de QR Code com acesso ao Procon-CG e ao CDC em estabelecimentos.",status:"Em tramitação"},
+{t:"Projeto de Lei",n:"PL 002/2026 (modelo)",titulo:"Jovem Tech CG – bolsas + estágio",desc:"Vagas prioritárias para jovens de 16-29 anos nos cursos gratuitos SECTI (IA, Python, redes) com encaminhamento a estágio.",status:"Protocolado"},
+{t:"Requerimento",n:"REQ 010/2026 (modelo)",titulo:"LED na Rua Neuza Borborema – Santo Antônio",desc:"Troca de iluminação fluorescente por LED, a exemplo da pauta recorrente da bancada Avante na Casa.",status:"Aprovado"},
+{t:"Requerimento",n:"REQ 011/2026 (modelo)",titulo:"Calçamento Rua Otacílio Colaço – Monte Santo",desc:"Solicita à Secretaria de Obras calçamento e drenagem, com fotos e abaixo-assinado dos moradores.",status:"Em tramitação"},
+{t:"Requerimento",n:"REQ 012/2026 (modelo)",titulo:"Mutirão TECH Itinerante 60+ nos CRAS",desc:"Levar letramento digital a idosos em clubes de mães e CRAS, com Lan Houses Sociais e voluntários.",status:"Em tramitação"},
+{t:"Indicação",n:"IND 005/2026 (modelo)",titulo:"Revitalização de lavanderias públicas",desc:"Reforma e reativação das lavanderias públicas municipais, pauta histórica do Avante na Câmara.",status:"Protocolado"},
+{t:"Indicação",n:"IND 006/2026 (modelo)",titulo:"Gabinete Itinerante semanal",desc:"Atendimento toda sexta em bairro/distrito diferente, com registro público das demandas no site.",status:"Aprovado"},
+{t:"Projeto de Lei",n:"PL 003/2026 (modelo)",titulo:"Cadastro Único do Autismo – apoio",desc:"Apoio à proposta de cadastro único municipal para pessoas com autismo, reforçando inclusão (pauta Saulo Germano).",status:"Em tramitação"},
+{t:"Requerimento",n:"REQ 013/2026 (modelo)",titulo:"Pavimentação Rua Cerâmica – Santa Rosa",desc:"Pavimentação asfáltica e sinalização, com prioridade para rota do transporte público.",status:"Protocolado"},
+];
+function badge(t){return t==="Projeto de Lei"?"t-pl":t==="Requerimento"?"t-req":"t-ind"}
+function stc(s){return s==="Aprovado"?"st-aprovado":s==="Em tramitação"?"st-tramite":"st-protocolo"}
+function render(lista){
+document.getElementById('lista').innerHTML=lista.map(p=>`
+<div class="card"><span class="tag ${badge(p.t)}">${p.t} • ${p.n}</span><h3>${p.titulo}</h3><p>${p.desc}</p>
+<span class="status ${stc(p.status)}"><i class="fa-solid fa-circle"></i> ${p.status}</span>
+<div class="foot"><a class="btn small btn-outline" href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener">Ver no SAPL</a><a class="btn small" href="index.html#contato">Apoiar</a></div></div>`).join('')||"<p>Nenhuma propositura encontrada.</p>";
+}
+function filtrar(){
+const b=document.getElementById('busca').value.toLowerCase(),t=document.getElementById('tipo').value,s=document.getElementById('status').value;
+render(DADOS.filter(p=>(!t||p.t===t)&&(!s||p.status===s)&&((p.titulo+p.desc+p.n).toLowerCase().includes(b))));
+}
+function sugerir(){
+  const nome=(document.getElementById('s-nome').value||'Cidadão').trim();
+  const texto=(document.getElementById('s-texto').value||'').trim();
+  if(!texto){alert('Descreva sua proposta antes de enviar.');return;}
+  const url="https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent("SUGESTÃO DE PROPOSITURA — SITE JP70\n\nNome: "+nome+"\n\n"+texto);
+  window.open(url,"_blank");
+  document.getElementById('s-ok').style.display='block';
+}
+render(DADOS);
+</script>
+<style>.duo@media{ }@media(max-width:900px){.duo{grid-template-columns:1fr !important}}</style>
+</body>
+</html>

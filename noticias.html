@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícias | Vereador Jean Pierre – Avante Campina Grande</title>
+<meta name="description" content="Notícias do mandato do Vereador Jean Pierre - página editável modelo com painel do gabinete.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--navy:#0a1f3d;--blue:#1450a0;--orange:#ff6a00;--bg:#f4f6fb;--line:#e3e9f5;--muted:#5b6b8c;--radius:16px}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg);color:#1a2340}
+h1,h2,h3{font-family:'Archivo',sans-serif}.container{max-width:1160px;margin:0 auto;padding:0 22px}a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:20}.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 22px;max-width:1160px;margin:0 auto}
+.brand{display:flex;gap:12px;align-items:center}.brand img{height:52px}.brand span{font-size:.78rem;color:var(--muted)}.menu{display:flex;gap:18px;font-weight:600;font-size:.9rem;align-items:center}
+.btn{display:inline-flex;gap:8px;align-items:center;background:var(--orange);color:#fff;font-weight:800;padding:11px 18px;border-radius:12px;border:0;cursor:pointer}.btn-outline{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero{background:linear-gradient(180deg,#0a1f3d,#102e5c);color:#fff;padding:44px 0}.hero p{color:#cbd8f0;max-width:720px;margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card img{height:190px;width:100%;object-fit:cover}.pad{padding:18px;display:grid;gap:8px}.tag{font-size:.7rem;font-weight:800;text-transform:uppercase;background:#eef4ff;color:var(--blue);padding:5px 10px;border-radius:999px;width:fit-content}
+.card p{color:var(--muted);font-size:.9rem}.meta{font-size:.78rem;color:var(--muted)}
+.admin{background:#fff;border:2px dashed var(--orange);border-radius:var(--radius);padding:20px;margin:10px 0 26px;display:grid;gap:10px}
+input,textarea,select{border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-family:inherit;font-size:.92rem;width:100%;background:#fbfcff}
+.admin-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+section{padding:32px 0}footer{background:#071530;color:#aebcd9;padding:28px 0;font-size:.85rem}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.small{padding:8px 12px;font-size:.82rem}
+@media(max-width:900px){.grid,.admin-row{grid-template-columns:1fr}.menu{display:none}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="index.html"><img src="assets/logo-avante.svg" alt="Avante 70"><div><b>Jean Pierre</b><br><span>Vereador • Avante 70 • Campina Grande/PB</span></div></a>
+<nav class="menu"><a href="index.html">Início</a><a href="proposituras.html">Proposituras</a><a href="noticias.html"><b>Notícias</b></a><a href="index.html#contato" class="btn">Fale com o vereador</a></nav>
+</div></header>
+<div class="hero"><div class="container">
+<p style="font-size:.78rem;letter-spacing:.1em;font-weight:800;color:#ffb37a">SALA DE IMPRENSA • GABINETE MODELO</p>
+<h1>Notícias do mandato</h1>
+<p>Página <b>editável</b>: o gabinete publica sem programador. Clique em “Área do gabinete”, use a senha modelo <code>jean70777</code>, adicione, edite ou exclua. Tudo fica salvo no navegador (localStorage). Em produção, ligue a um CMS ou planilha.</p>
+<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" onclick="toggleAdmin()"><i class="fa-solid fa-lock"></i> Área do gabinete</button><a class="btn btn-outline" style="background:#fff" href="https://www.camaracg.pb.gov.br/noticias/" target="_blank" rel="noopener">Notícias oficiais CMCG</a></div>
+</div></div>
+
+<section><div class="container">
+<div class="admin" id="adminBox" style="display:none">
+<h3><i class="fa-solid fa-pen-to-square"></i> Painel do gabinete (modelo)</h3>
+<div id="loginBox"><div class="admin-row"><input id="pwd" type="password" placeholder="Senha modelo: jean70777"><button class="btn" onclick="login()">Entrar</button></div></div>
+<div id="formBox" style="display:none">
+<div class="admin-row"><input id="f-titulo" placeholder="Título da notícia"><input id="f-tag" placeholder="Editoria (ex.: Posse, Bairros, Tecnologia)"></div>
+<div class="admin-row"><input id="f-img" placeholder="Imagem: assets/posse-1.jpg ou https://..."><input id="f-link" placeholder="Link fonte (https://...)"></div>
+<textarea id="f-texto" rows="3" placeholder="Texto resumido da notícia..."></textarea>
+<div class="actions"><button class="btn" onclick="salvar()"><i class="fa-solid fa-floppy-disk"></i> Publicar</button><button class="btn btn-outline" onclick="resetar()">Restaurar padrão</button></div>
+<p style="font-size:.8rem;color:var(--muted)">Dica: use fotos da pasta <code>assets/</code> (posse-1.jpg, posse-2.jpg, posse-3.jpg, tech.jpg, sao-joao.jpg, campina-centro.jpg).</p>
+</div>
+</div>
+<div class="grid" id="lista"></div>
+</div></section>
+<footer><div class="container">© 2026 Gabinete Modelo Jean Pierre • Fontes linkadas em cada card • Fotos posse: Josenildo Costa/CMCG • <a href="index.html" style="text-decoration:underline">Voltar ao início</a></div></footer>
+<script src="assets/config.js"></script>
+<script>
+const PADRAO=[
+{titulo:"Suplente Jean Pierre toma posse como vereador na CMCG",tag:"Posse • 20/08/2026",img:"assets/posse-2.jpg",texto:"Empossado na 62ª Sessão Ordinária no lugar de Pastor Luciano Breno (Procon-CG). Juramento, família e mandato propositivo.",link:"https://www.paraiba24horas.com.br/noticia/suplente-jean-pierre-toma-posse-como-vereador-na-cmcg",data:"20/08/2026"},
+{titulo:"Base tech: 500 vagas gratuitas SECTI + TECH Itinerante",tag:"Tecnologia",img:"assets/tech.jpg",texto:"Cursos de IA, Python, redes e design + letramento digital para 40+ e idosos nos CRAS. Bandeira herdada da passagem pela SECTI.",link:"https://campinagrande.pb.gov.br/secti-lanca-500-vagas-para-cursos-gratuitos-na-area-de-tecnologia-em-campina-grande",data:"Modelo"},
+{titulo:"Acompanhe tudo no SAPL e na TV Câmara ao vivo",tag:"Transparência",img:"assets/posse-1.jpg",texto:"Requerimentos, PLs, pautas e atas no SAPL. Sessões terças e quartas com transmissão no YouTube @CamaraCGOficial.",link:"https://sapl.campinagrande.pb.leg.br",data:"Permanente"},
+{titulo:"Campina: Maior São João e orgulho da Borborema",tag:"Cidade",img:"assets/sao-joao.jpg",texto:"Espaço para cobertura do mandato nas festas, distritos e bairros — Galante, Parque do Povo, Açude Velho e Evaldo Cruz.",link:"https://www.camaracg.pb.gov.br",data:"Modelo"},
+];
+let itens=JSON.parse(localStorage.getItem('jp_noticias')||'null')||PADRAO;
+let logado=false;
+function render(){
+document.getElementById('lista').innerHTML=itens.map((n,i)=>`
+<div class="card"><img src="${n.img}" alt="" onerror="this.src='assets/posse-1.jpg'"><div class="pad">
+<span class="tag">${n.tag||'Gabinete'}</span><h3>${n.titulo}</h3><p>${n.texto}</p>
+<div class="meta"><i class="fa-regular fa-calendar"></i> ${n.data||''}</div>
+<div class="actions"><a class="btn small" href="${n.link}" target="_blank" rel="noopener">Ler mais</a>
+${logado?`<button class="btn small btn-outline" onclick="excluir(${i})">Excluir</button>`:''}</div>
+</div></div>`).join('');
+localStorage.setItem('jp_noticias',JSON.stringify(itens));
+}
+function toggleAdmin(){const b=document.getElementById('adminBox');b.style.display=b.style.display==='none'?'grid':'none';}
+function login(){
+  // TROCAR SENHA AQUI — definitiva do gabinete (mantido jean70777 a seu pedido; troque também em assets/config.js):
+  const SENHA = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.senhaPainel) ? SITE_CONFIG.senhaPainel : 'jean70777';
+  if(document.getElementById('pwd').value===SENHA){logado=true;document.getElementById('loginBox').style.display='none';document.getElementById('formBox').style.display='grid';render();}else{alert('Senha incorreta. Verifique em assets/config.js');}}
+function salvar(){
+const t=document.getElementById('f-titulo').value.trim();if(!t){alert('Digite o título');return;}
+itens.unshift({titulo:t,tag:document.getElementById('f-tag').value||'Gabinete',img:document.getElementById('f-img').value||'assets/posse-3.jpg',texto:document.getElementById('f-texto').value||'',link:document.getElementById('f-link').value||'https://www.camaracg.pb.gov.br',data:new Date().toLocaleDateString('pt-BR')});
+document.getElementById('f-titulo').value='';document.getElementById('f-texto').value='';render();
+}
+function excluir(i){if(confirm('Excluir esta notícia?')){itens.splice(i,1);render();}}
+function resetar(){itens=PADRAO;render();}
+render();
+</script>
+</body>
+</html>
