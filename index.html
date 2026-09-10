@@ -3,405 +3,268 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vereador Jean Pierre | Avante Campina Grande - PB | Mandato Propositivo</title>
-<meta name="description" content="Site institucional modelo do Vereador Jean Pierre - Avante Campina Grande-PB. Posse em 20/08/2026, mandato propositivo, inovação, juventude e tecnologia.">
+<title>Vereador Jean Pierre | Campina Grande — Trabalho, Diálogo e Resultados</title>
+<meta name="description" content="Site oficial modelo do Vereador Jean Pierre — Câmara Municipal de Campina Grande/PB. Projetos, fiscalização, ações nos bairros e resultados.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 :root{
-  --navy:#0a1f3d; --navy2:#102e5c; --blue:#1450a0; --sky:#2ea3e8;
-  --orange:#ff6a00; --orange2:#ff8c2e; --bg:#f4f6fb; --card:#ffffff;
-  --text:#1a2340; --muted:#5b6b8c; --line:#e3e9f5;
-  --green:#0e9f6e; --radius:18px;
+  --navy:#0a2a5c; --navy2:#0d3572; --blue:#1e5bff; --gold:#d2a81d; --gold2:#b8890f;
+  --bg:#f2f4f8; --card:#ffffff; --text:#16233f; --muted:#5b6b8c; --line:#dfe6f2;
+  --green:#14532d; --radius:16px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-h1,h2,h3,h4{font-family:'Archivo',sans-serif;line-height:1.15}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.12}
 a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
-.container{max-width:1160px;margin:0 auto;padding:0 22px}
+img{display:block;max-width:100%}
+.container{max-width:1180px;margin:0 auto;padding:0 22px}
 /* topbar */
-.topbar{background:var(--navy);color:#cbd8f0;font-size:.82rem}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;padding:8px 22px;gap:12px;flex-wrap:wrap}
-.topbar a:hover{color:#fff}
-.badge-modelo{background:var(--orange);color:#fff;font-weight:800;font-size:.7rem;letter-spacing:.08em;padding:4px 10px;border-radius:999px;text-transform:uppercase}
+.topbar{background:#071d42;color:#c9d6ef;font-size:.8rem}
+.topbar .container{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:7px 22px}
+.topbar a{color:#fff;font-weight:600}.topbar a:hover{text-decoration:underline}
 /* header */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 22px;max-width:1160px;margin:0 auto}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 22px;max-width:1180px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-mark{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 60%,var(--sky) 100%);display:grid;place-items:center;color:#fff;font-weight:900;font-size:1.2rem;position:relative;overflow:hidden}
-.brand-mark::after{content:"70";position:absolute;bottom:2px;right:6px;font-size:.6rem;background:var(--orange);padding:1px 6px;border-radius:99px}
-.brand b{font-size:1.05rem;display:block;line-height:1.1}
-.brand span{font-size:.78rem;color:var(--muted);display:block}
-.menu{display:flex;gap:20px;align-items:center;font-weight:600;font-size:.92rem}
-.menu a{opacity:.8}.menu a:hover{opacity:1;color:var(--blue)}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:#fff;font-weight:800;padding:12px 20px;border-radius:12px;border:0;cursor:pointer;transition:.2s}
-.btn:hover{transform:translateY(-1px);background:#e65e00;box-shadow:0 10px 24px rgba(255,106,0,.3)}
+.jp-mark{width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.25rem;border:2px solid var(--gold)}
+.brand b{display:block;font-size:1rem}.brand span{font-size:.76rem;color:var(--muted)}
+.menu{display:flex;gap:18px;align-items:center;font-weight:600;font-size:.88rem}
+.menu a{opacity:.8}.menu a:hover{opacity:1;color:var(--navy)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;font-weight:800;padding:11px 18px;border-radius:10px;border:0;cursor:pointer}
+.btn:hover{background:var(--navy2)}
+.btn-gold{background:var(--gold);color:#1a1400}.btn-gold:hover{background:var(--gold2);color:#fff}
 .btn-outline{background:#fff;color:var(--navy);border:2px solid var(--navy)}
-.btn-outline:hover{background:var(--navy);color:#fff}
-.hamb{display:none;background:none;border:0;font-size:1.5rem}
-/* hero */
-.hero{background:radial-gradient(900px 400px at 85% -10%,#2ea3e833,transparent),linear-gradient(180deg,#0a1f3d 0%,#102e5c 100%);color:#fff;overflow:hidden;position:relative}
-.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:56px 22px 48px}
-.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.04em}
-.kicker i{color:var(--orange2)}
-.hero h1{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:900;margin:16px 0 12px}
-.hero h1 span{color:var(--orange2)}
-.hero p.lead{color:#d2ddf3;font-size:1.08rem;max-width:560px}
-.hero-cards{display:flex;gap:12px;margin:22px 0;flex-wrap:wrap}
-.hmini{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:12px 16px;min-width:150px}
-.hmini b{font-size:1.25rem;display:block}.hmini span{font-size:.8rem;color:#cbd8f0}
-.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-.hero-photo{position:relative}
-.hero-photo .frame{background:#fff;padding:10px;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.35);transform:rotate(1.5deg)}
-.hero-photo img{border-radius:14px;aspect-ratio:4/4.6;object-fit:cover;width:100%;background:#dbe6f7}
-.float-card{position:absolute;left:-18px;bottom:22px;background:#fff;color:var(--text);border-radius:16px;padding:12px 16px;box-shadow:0 16px 40px rgba(0,0,0,.3);display:flex;gap:12px;align-items:center;max-width:300px}
-.float-card .ic{width:44px;height:44px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:1.2rem}
-.float-card b{font-size:.9rem}.float-card span{font-size:.78rem;color:var(--muted)}
-.float2{position:absolute;right:-10px;top:18px;background:var(--orange);color:#fff;border-radius:14px;padding:10px 14px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.3);transform:rotate(-2deg)}
-/* strip */
-.strip{background:#fff;border-bottom:1px solid var(--line)}
-.strip .container{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:14px 22px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
-.strip strong{color:var(--navy)}
+.hamb{display:none;background:none;border:0;font-size:1.4rem}
+/* HERO banner — replica identidade do canal */
+.hero{background:linear-gradient(100deg,#081c40 0%,#0a2a5c 45%,#0d3572 100%);color:#fff;overflow:hidden;position:relative}
+.hero-bg{position:absolute;inset:0;background:url('assets/campina-centro.jpg') right center/cover no-repeat;opacity:.28}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#081c40 30%,rgba(8,28,64,.55) 60%,rgba(8,28,64,.15))}
+.hero .container{position:relative;display:grid;grid-template-columns:230px 1fr 1.1fr;gap:26px;align-items:center;padding:40px 22px}
+.pillars{font-weight:800;font-size:.82rem;letter-spacing:.04em;line-height:1.9;color:#fff}
+.pillars span{color:var(--gold)}
+.hero-mid{text-align:center}
+.hero-mid .over{letter-spacing:.55em;font-weight:700;font-size:.85rem;color:#e8edf8}
+.hero-mid h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:900;letter-spacing:.01em}
+.hero-mid h1 u{text-decoration:none;border-bottom:8px solid var(--blue)}
+.hero-sub{margin-top:10px;font-weight:700;letter-spacing:.12em;font-size:.82rem;color:#e8edf8}
+.hero-icons{display:flex;gap:22px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.hero-icons div{text-align:center;font-size:.68rem;font-weight:800;letter-spacing:.06em}
+.hero-icons i{font-size:1.4rem;display:block;margin-bottom:6px}
+.hero-photo{display:flex;align-items:flex-end;gap:14px}
+.hero-photo img{width:270px;height:330px;object-fit:cover;border-radius:14px;border:3px solid rgba(255,255,255,.85);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.hero-side{font-family:'Archivo',sans-serif;font-style:italic;text-align:right}
+.hero-side b{font-size:1.5rem;display:block;line-height:1.25}
+.hero-side span{display:inline-block;margin-top:6px;background:var(--gold);height:5px;width:150px;border-radius:99px}
+/* channel bar */
+.channel{background:#fff;border-bottom:1px solid var(--line)}
+.channel .container{display:flex;gap:18px;align-items:center;padding:18px 22px;flex-wrap:wrap}
+.avatar{width:92px;height:92px;border-radius:50%;object-fit:cover;border:3px solid var(--line)}
+.channel h2{font-size:1.35rem;color:var(--navy)}
+.handle{color:var(--muted);font-size:.85rem}
+.links{font-size:.85rem;margin-top:4px}.links a{color:var(--blue);font-weight:700}.links a:hover{text-decoration:underline}
 /* sections */
-section{padding:64px 0}
-.sec-head{max-width:720px;margin-bottom:30px}
-.eyebrow{color:var(--orange);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
-.sec-head h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:8px 0 10px;color:var(--navy)}
-.sec-head p{color:var(--muted)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 8px 24px rgba(16,46,92,.06)}
-.card h3{color:var(--navy);margin:12px 0 8px;font-size:1.15rem}
-.card p{color:var(--muted);font-size:.95rem}
-.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.3rem;color:#fff;background:linear-gradient(135deg,var(--blue),var(--sky))}
-.icon.orange{background:linear-gradient(135deg,var(--orange),var(--orange2))}
-.icon.navy{background:linear-gradient(135deg,var(--navy),var(--navy2))}
-.icon.green{background:linear-gradient(135deg,#0e9f6e,#34d399)}
-/* sobre */
-.sobre-img{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff;padding:10px}
-.sobre-img img{border-radius:12px}
-.quote{border-left:4px solid var(--orange);background:#fff7f0;padding:16px 18px;border-radius:0 14px 14px 0;margin:16px 0;color:#5a3a1a;font-style:italic}
-ul.check{list-style:none;margin-top:14px;display:grid;gap:10px}
-ul.check li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
-ul.check i{color:var(--green);margin-top:4px}
-/* numbers */
-.numbers{background:var(--navy);color:#fff;border-radius:24px;padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.numbers div{text-align:center;border-right:1px solid rgba(255,255,255,.15)}
-.numbers div:last-child{border:0}
-.numbers b{font-size:1.9rem;display:block;color:#fff}
-.numbers span{font-size:.82rem;color:#b9c8e6}
-/* timeline */
-.timeline{position:relative;margin-top:10px;padding-left:26px;border-left:3px solid var(--line);display:grid;gap:18px}
-.t-item{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.t-item::before{content:"";position:absolute;left:-35px;top:18px;width:14px;height:14px;border-radius:50%;background:var(--orange);border:3px solid #fff;box-shadow:0 0 0 3px var(--orange)}
-.t-item small{font-weight:800;color:var(--blue);letter-spacing:.04em}
-.t-item b{display:block;color:var(--navy);margin:4px 0}
-/* news */
-.news-card{overflow:hidden;padding:0}
-.news-card img{height:190px;width:100%;object-fit:cover}
-.news-card .pad{padding:18px 20px 20px}
-.tag{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#eef4ff;color:var(--blue);padding:5px 10px;border-radius:999px;display:inline-block;margin-bottom:10px}
-.meta{font-size:.8rem;color:var(--muted);margin-top:12px;display:flex;gap:12px;align-items:center}
-/* gallery */
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.gal figure{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.gal img{height:220px;width:100%;object-fit:cover}
-.gal figcaption{padding:10px 14px;font-size:.82rem;color:var(--muted)}
+section{padding:52px 0}
+.eyebrow{color:var(--navy);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}
+.sec-head h2{font-size:clamp(1.5rem,3vw,2.2rem);color:var(--navy);margin:6px 0 8px}
+.sec-head p{color:var(--muted);max-width:760px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
 /* videos */
-.video-wrap{background:var(--navy);border-radius:24px;padding:28px;color:#fff;display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center}
-.video-frame{background:#000;border-radius:16px;overflow:hidden;aspect-ratio:16/9;border:1px solid rgba(255,255,255,.2)}
-.video-frame iframe{width:100%;height:100%;border:0}
-/* contato */
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
-.info-list{display:grid;gap:12px;margin-top:16px}
-.info-list div{background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start;font-size:.92rem}
-.info-list i{color:var(--blue);margin-top:3px}
-form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:12px}
-label{font-size:.85rem;font-weight:700;color:var(--navy)}
-input,select,textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:.95rem;background:#fbfcff}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--sky);border-color:var(--sky);background:#fff}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-/* footer */
-footer{background:#071530;color:#aebcd9;padding:44px 0 22px;margin-top:20px}
-footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:22px}
-footer h4{color:#fff;margin-bottom:12px;font-size:.95rem}
-footer a{display:block;font-size:.88rem;padding:4px 0;opacity:.85}footer a:hover{opacity:1;color:#fff}
-.social{display:flex;gap:10px;margin-top:12px}
-.social a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.1);display:grid;place-items:center}
-.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:16px;font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.whats{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 12px 30px rgba(0,0,0,.3);z-index:60}
-@media(max-width:940px){
-  .hero .container,.grid2,.grid3,.contact-grid,.video-wrap{grid-template-columns:1fr}
-  .numbers{grid-template-columns:1fr 1fr}.numbers div{border:0;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:14px}
-  .gal{grid-template-columns:1fr 1fr}
-  footer .cols{grid-template-columns:1fr 1fr}
-  .menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;padding:18px;border-bottom:1px solid var(--line)}
-  .menu.open{display:flex}.hamb{display:block}
-}
-@media(max-width:560px){.gal{grid-template-columns:1fr}.row2{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr}}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.thumb{position:relative}
+.thumb img{height:210px;width:100%;object-fit:cover}
+.thumb .overlay{position:absolute;top:12px;right:12px;left:12px;text-align:right;font-weight:900;font-size:1.05rem;text-shadow:0 2px 10px rgba(0,0,0,.7);color:#fff;line-height:1.2}
+.badge-tv{position:absolute;left:0;bottom:0;background:var(--navy);color:#fff;font-size:.68rem;font-weight:800;padding:6px 10px;border-top-right-radius:10px}
+.badge-tv small{display:block;font-weight:600;color:#bcd0f5}
+.dur{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.85);color:#fff;font-size:.72rem;font-weight:700;padding:3px 8px;border-radius:6px}
+.vpad{padding:14px 16px 16px}.vpad h3{font-size:.98rem;color:var(--navy)}.vpad p{font-size:.8rem;color:var(--muted);margin-top:6px}
+/* playlists */
+.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.plist{border-radius:12px;padding:16px;color:#fff;min-height:110px;display:flex;gap:10px;align-items:center;font-weight:800;font-size:.85rem}
+.plist i{font-size:1.8rem}.plist small{display:block;font-weight:600;opacity:.85;font-size:.72rem}
+.pl-navy{background:#0f3a7d}.pl-green{background:#14532d}.pl-gold{background:#a87f0a}.pl-dark{background:#12305e}.pl-forest{background:#0d4a34}
+/* pillars cards */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card h3{color:var(--navy);margin:10px 0 6px}.card p{color:var(--muted);font-size:.9rem}
+.icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:1.2rem;background:var(--navy)}
+.icon.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1a1400}
+.icon.blue{background:linear-gradient(135deg,var(--blue),#6d9bff)}
+.icon.green{background:linear-gradient(135deg,#14532d,#22a06b)}
+.numbers{background:var(--navy);color:#fff;border-radius:20px;padding:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.numbers div{text-align:center}.numbers b{font-size:1.7rem;display:block}.numbers span{font-size:.78rem;color:#bcd0f5}
+/* about + contact */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.about-img{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff;padding:8px}
+.about-img img{border-radius:10px}
+ul.check{list-style:none;display:grid;gap:10px;margin-top:12px}
+ul.check li{display:flex;gap:10px;font-size:.92rem}ul.check i{color:var(--green);margin-top:4px}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:10px}
+label{font-size:.82rem;font-weight:700;color:var(--navy)}
+input,select,textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:11px 13px;font-family:inherit;font-size:.92rem}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.info{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;gap:10px;font-size:.9rem;margin-top:10px}
+.info i{color:var(--navy);margin-top:3px}
+footer{background:#071d42;color:#aebcd9;padding:36px 0 20px;font-size:.85rem}
+footer h4{color:#fff;margin-bottom:10px}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:20px}
+footer a{display:block;padding:3px 0;opacity:.85}footer a:hover{opacity:1;color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.14);margin-top:22px;padding-top:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.78rem}
+.whats{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:1.5rem;z-index:60;box-shadow:0 12px 28px rgba(0,0,0,.3)}
+@media(max-width:1000px){.hero .container{grid-template-columns:1fr;text-align:center}.pillars,.hero-side{text-align:center}.hero-photo{justify-content:center}.vgrid,.grid4{grid-template-columns:1fr 1fr}.pgrid{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.menu{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;border-bottom:1px solid var(--line)}.menu.open{display:flex}.hamb{display:block}footer .cols{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.vgrid,.grid4,.pgrid,.row2{grid-template-columns:1fr}footer .cols{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<div class="topbar"><div class="container">
+<div><i class="fa-solid fa-landmark"></i> Câmara Municipal de Campina Grande/PB • Casa de Félix Araújo</div>
+<div><a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener">sapl.campinagrande.pb.leg.br</a> &nbsp;•&nbsp; <a href="mailto:gab.jeanpierre@campinagrande.pb.leg.br">gab.jeanpierre@campinagrande.pb.leg.br</a></div>
+</div></div>
 
-<div class="topbar">
-  <div class="container">
-    <div><i class="fa-solid fa-landmark"></i> Casa de Félix Araújo — Câmara Municipal de Campina Grande • PB &nbsp;|&nbsp; <i class="fa-solid fa-phone"></i> (83) 3315-6300</div>
-    <div style="display:flex;gap:10px;align-items:center"><span class="badge-modelo">Site modelo • demonstração</span><a href="https://www.camaracg.pb.gov.br" target="_blank" rel="noopener">camaracg.pb.gov.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-  </div>
-</div>
-
-<header>
-  <div class="nav">
-    <a class="brand" href="#inicio">
-      <img src="assets/logo-avante.svg" alt="Avante 70" style="height:52px;border-radius:10px">
-      <div><b>Jean Pierre</b><span>Vereador • Avante 70 • Campina Grande/PB</span></div>
-    </a>
-    <nav class="menu" id="menu">
-      <a href="#sobre">Sobre</a>
-      <a href="#atuacao">Atuação</a>
-      <a href="#trajetoria">Trajetória</a>
-      <a href="proposituras.html">Proposituras</a>
-      <a href="noticias.html">Notícias</a>
-      <a href="#galeria">Fotos</a>
-      <a href="#videos">Vídeos</a>
-      <a href="#contato" class="btn" style="padding:10px 16px"><i class="fa-solid fa-handshake"></i> Fale com o vereador</a>
-    </nav>
-    <button class="hamb" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
-  </div>
-</header>
+<header><div class="nav">
+<a class="brand" href="#inicio"><span class="jp-mark">JP</span><span><b>Vereador Jean Pierre</b><span>Campina Grande • Compromisso com as pessoas</span></span></a>
+<nav class="menu" id="menu">
+<a href="#acoes">Ações</a><a href="#videos">Vídeos</a><a href="#playlists">Playlists</a><a href="proposituras.html">Projetos</a><a href="noticias.html">Notícias</a><a href="#contato" class="btn">Fale com o vereador</a>
+</nav>
+<button class="hamb" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</div></header>
 
 <div class="hero" id="inicio">
-  <div class="container">
-    <div>
-      <span class="kicker"><i class="fa-solid fa-circle-check"></i> EM EXERCÍCIO NA CÂMARA • POSSE 20/08/2026 • 62ª SESSÃO ORDINÁRIA</span>
-      <h1>Jean Pierre <span>— mandato propositivo</span> por Campina Grande</h1>
-      <p class="lead">Suplente do Avante empossado vereador na Casa de Félix Araújo, no lugar do vereador Pastor Luciano Breno, hoje secretário do Procon Municipal. Ex-equipe da Secretaria de Ciência, Tecnologia e Inovação: Impulse Campina e letramento digital.</p>
-      <div class="hero-cards">
-        <div class="hmini"><b>70.777</b><span>número nas Eleições 2024 • Avante</span></div>
-        <div class="hmini"><b>Avante</b><span>bancada com Pr. Luciano Breno</span></div>
-        <div class="hmini"><b>CG • PB</b><span>Rainha da Borborema</span></div>
-      </div>
-      <div class="hero-cta">
-        <a href="#sobre" class="btn"><i class="fa-solid fa-user"></i> Conheça o vereador</a>
-        <a href="#contato" class="btn btn-outline" style="background:#fff"><i class="fa-solid fa-bullhorn"></i> Envie sua demanda</a>
-      </div>
-      <p style="margin-top:14px;font-size:.8rem;color:#9fb3d8">Fontes públicas: CMCG / Paraíba 24 Horas / TSE 2024. Site modelo sem vínculo oficial.</p>
-    </div>
-    <div class="hero-photo">
-      <div class="float2"><i class="fa-solid fa-star"></i> 70777</div>
-      <div class="frame">
-        <img src="assets/posse-2.jpg" alt="Vereador Jean Pierre tomando posse na Câmara Municipal de Campina Grande em 20 de agosto de 2026 - foto CMCG Josenildo Costa">
-      </div>
-      <div class="float-card">
-        <div class="ic"><i class="fa-solid fa-quote-left"></i></div>
-        <div><b>“Contem com o vereador Jean Pierre”</b><span>Discurso de posse • 20/08/2026</span></div>
-      </div>
-    </div>
-  </div>
+<div class="hero-bg"></div>
+<div class="container">
+<div class="pillars">TRABALHO<br>DIÁLOGO<br>RESULTADOS<br><br><span>POR UMA<br>CAMPINA GRANDE<br>MAIS FORTE</span></div>
+<div class="hero-mid">
+<div class="over">VEREADOR</div>
+<h1>JEAN <u>PIERRE</u></h1>
+<div class="hero-sub">COMPROMISSO COM AS PESSOAS<br>E COM O FUTURO DE CAMPINA GRANDE</div>
+<div class="hero-icons">
+<div><i class="fa-solid fa-users"></i>PROJETOS</div>
+<div><i class="fa-solid fa-magnifying-glass"></i>FISCALIZAÇÃO</div>
+<div><i class="fa-solid fa-location-dot"></i>AÇÕES NOS BAIRROS</div>
+<div><i class="fa-solid fa-handshake"></i>RESULTADOS</div>
+</div>
+</div>
+<div style="display:flex;gap:14px;align-items:center;justify-content:center">
+<div class="hero-photo"><img src="assets/posse-2.jpg" alt="Vereador Jean Pierre na tribuna"></div>
+<div class="hero-side"><b>Campina Grande<br>sempre em frente!</b><span></span></div>
+</div>
+</div>
 </div>
 
-<div class="strip">
-  <div class="container">
-    <div>📍 <strong>Gabinete:</strong> Rua Santa Clara, s/n – São José • CEP 58400-540 • seg a qui 8h-17h / sex 8h-13h</div>
-    <div>📺 <strong>Sessões ao vivo:</strong> <a href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">YouTube @CamaraCGOficial</a> • SAPL <a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">sapl.campinagrande.pb.leg.br</a></div>
-  </div>
+<div class="channel"><div class="container">
+<img class="avatar" src="assets/posse-2.jpg" alt="Vereador Jean Pierre">
+<div style="flex:1;min-width:240px">
+<h2>Vereador Jean Pierre | Campina Grande</h2>
+<div class="handle">@VereadorJeanPierreCG • Canal oficial do mandato na Câmara Municipal de Campina Grande/PB</div>
+<div class="links">Pronunciamentos na tribuna, projetos de lei, requerimentos e fiscalizações. <a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener">sapl.campinagrande.pb.leg.br</a> &nbsp; <a href="mailto:gab.jeanpierre@campinagrande.pb.leg.br">gab.jeanpierre@campinagrande.pb.leg.br</a></div>
 </div>
+<a class="btn" href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> Inscrever-se</a>
+</div></div>
 
-<section id="sobre">
-  <div class="container">
-    <div class="sec-head"><div class="eyebrow">Sobre o vereador</div><h2>Quem é Jean Pierre</h2><p>Biografia resumida a partir de informações públicas divulgadas pela Câmara e imprensa local. Este é um site <strong>modelo institucional</strong> para fins de demonstração.</p></div>
-    <div class="grid2">
-      <div>
-        <div class="sobre-img"><img src="assets/posse-1.jpg" alt="Posse do suplente Jean Pierre na Câmara Municipal de Campina Grande"></div>
-        <p style="font-size:.8rem;color:var(--muted);margin-top:8px">Foto: Josenildo Costa / CMCG — 62ª Sessão Ordinária, presidida por Saulo Germano e secretariada por Saulo Noronha.</p>
-      </div>
-      <div>
-        <div class="card">
-          <span class="tag">Avante • Campina Grande - PB • Legislatura 2025-2028</span>
-          <h3 style="font-size:1.4rem">Gratidão, família e tecnologia a serviço da cidade</h3>
-          <p>Jean Pierre disputou as <strong>Eleições 2024 pelo Avante com o número 70.777</strong> (lista TSE/Estadão). Ficou na suplência da bancada do Avante, cujo titular eleito foi o vereador <strong>Pastor Luciano Breno (2.752 votos)</strong>.</p>
-          <p style="margin-top:10px">Em <strong>20 de agosto de 2026</strong>, durante a 62ª Sessão Ordinária, foi <strong>empossado vereador</strong> em razão do afastamento de Pastor Luciano Breno, que assumiu a <strong>Secretaria Municipal de Proteção e Defesa do Consumidor (Procon-CG)</strong>.</p>
-          <div class="quote">“A chegada à Casa de Félix Araújo é o complemento de uma história que vem sendo elaborada ao longo dos anos, e Deus tem me dado a oportunidade de viver coisas extraordinárias.” — Jean Pierre, posse</div>
-          <ul class="check">
-            <li><i class="fa-solid fa-circle-check"></i> <span><strong>Ex-Secretaria de Ciência, Tecnologia e Inovação (SECTI-CG):</strong> participou do projeto <strong>Impulse Campina</strong> e de ações de <strong>letramento digital</strong>.</span></li>
-            <li><i class="fa-solid fa-circle-check"></i> <span><strong>Valores citados na posse:</strong> família, exemplo do avô, fé e gratidão a Campina Grande.</span></li>
-            <li><i class="fa-solid fa-circle-check"></i> <span><strong>Compromisso:</strong> “Quero ser relevante em minhas proposituras, fazer um <strong>mandato propositivo</strong>”.</span></li>
-            <li><i class="fa-solid fa-circle-check"></i> <span><strong>Base institucional:</strong> Casa de Félix Araújo, comissões, SAPL e TV Câmara.</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="numbers" style="margin-top:22px">
-      <div><b>70.777</b><span>Número de urna 2024<br>Avante</span></div>
-      <div><b>20/08/2026</b><span>Posse como vereador<br>62ª Sessão Ordinária</span></div>
-      <div><b>23</b><span>Vereadores na CMCG<br>Legislatura 2025-2028</span></div>
-      <div><b>100%</b><span>Mandato propositivo<br>Presença e escuta</span></div>
-    </div>
-  </div>
+<section id="acoes">
+<div class="container">
+<div class="sec-head"><div><div class="eyebrow">Atuação do mandato</div><h2>Projetos • Fiscalização • Bairros • Resultados</h2><p>Somente as ações do Vereador Jean Pierre: o que foi apresentado, cobrado e entregue.</p></div><a class="btn btn-outline" href="proposituras.html">Ver todos os projetos</a></div>
+<div class="grid4">
+<div class="card"><div class="icon"><i class="fa-solid fa-users"></i></div><h3>Projetos</h3><p>Projetos de lei e requerimentos do gabinete com acompanhamento público no SAPL.</p></div>
+<div class="card"><div class="icon blue"><i class="fa-solid fa-magnifying-glass"></i></div><h3>Fiscalização</h3><p>Cobrança ao Executivo por obras, serviços e mobilidade — com prazos e respostas.</p></div>
+<div class="card"><div class="icon gold"><i class="fa-solid fa-location-dot"></i></div><h3>Ações nos bairros</h3><p>Gabinete itinerante e visitas técnicas nos bairros e distritos de Campina Grande.</p></div>
+<div class="card"><div class="icon green"><i class="fa-solid fa-handshake"></i></div><h3>Resultados</h3><p>Prestação de contas do que avançou: sessões, votações e demandas atendidas.</p></div>
+</div>
+<div class="numbers">
+<div><b>62ª</b><span>Sessão Ordinária<br>Posse 20/08/2026</span></div>
+<div><b>64ª</b><span>Sessão Ordinária<br>VLT e mobilidade 26/08</span></div>
+<div><b>67ª</b><span>Sessão Ordinária<br>Semana da Pátria 02/09</span></div>
+<div><b>4</b><span>Frentes de ação<br>Projetos • Fiscalização • Bairros • Resultados</span></div>
+</div>
+</div>
 </section>
 
-<section id="atuacao" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="container">
-    <div class="sec-head"><div class="eyebrow">Atuação e bandeiras</div><h2>Um mandato propositivo para Campina crescer</h2><p>Pilares inspirados na trajetória do vereador na SECTI e nas demandas ouvidas nos bairros. Propostas-modelo, editáveis pelo gabinete.</p></div>
-    <div class="grid3">
-      <div class="card"><div class="icon"><i class="fa-solid fa-microchip"></i></div><h3>Inovação e Tecnologia</h3><p>Impulse Campina, letramento digital, Lan Houses Sociais, TECH Itinerante, qualificação para IA, programação e segurança online. Tecnologia perto do povo.</p></div>
-      <div class="card"><div class="icon orange"><i class="fa-solid fa-graduation-cap"></i></div><h3>Juventude e Oportunidades</h3><p>Primeiro emprego, estágio, cursos gratuitos SECTI (500 vagas), empreendedorismo jovem, e-sports e economia criativa no Parque do Povo e bairros.</p></div>
-      <div class="card"><div class="icon navy"><i class="fa-solid fa-city"></i></div><h3>Bairros e Infraestrutura</h3><p>Calçamento, LED, drenagem, praças, Parque Evaldo Cruz e Açude Velho. Requerimentos via SAPL com acompanhamento público de cada pedido.</p></div>
-      <div class="card"><div class="icon green"><i class="fa-solid fa-shield-halved"></i></div><h3>Defesa do Consumidor</h3><p>Continuidade da pauta do Procon-CG: PL 625/2026 (QR Code do Procon nos comércios), mutirões de renegociação e fiscalização educativa.</p></div>
-      <div class="card"><div class="icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Saúde e Inclusão</h3><p>Apoio a UBSs, Cadastro Único do Autismo, acessibilidade, inclusão digital de idosos (Tech Itinerante) e saúde nos distritos como Galante.</p></div>
-      <div class="card"><div class="icon orange"><i class="fa-solid fa-hand-holding-hand"></i></div><h3>Escuta e Transparência</h3><p>Gabinete de portas abertas, Fala Cidadão, relatórios mensais, presença nas sessões terças e quartas e prestação de contas no YouTube.</p></div>
-    </div>
-  </div>
+<section id="videos" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="container">
+<div class="sec-head"><div><div class="eyebrow">Vídeos do mandato</div><h2>Pronunciamentos na tribuna</h2><p>Recortes das sessões da Câmara. Assista e compartilhe.</p></div><a class="btn" href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener"><i class="fa-solid fa-play"></i> Reproduzir tudo</a></div>
+<div class="vgrid">
+<article class="vcard"><div class="thumb"><img src="assets/posse-2.jpg" alt="Posse Vereador Jean Pierre"><div class="overlay">POSSE<br>VEREADOR<br>JEAN PIERRE</div><div class="badge-tv">TV CÂMARA<small>CAMPINA GRANDE • 62ª SESSÃO 20/08/2026</small></div><span class="dur">12:34</span></div><div class="vpad"><h3>Posse de Jean Pierre — 62ª Sessão Ordinária (20/08/2026)</h3><p>Juramento e primeiro pronunciamento na Casa de Félix Araújo.</p></div></article>
+<article class="vcard"><div class="thumb"><img src="assets/posse-1.jpg" alt="VLT e mobilidade urbana"><div class="overlay">VLT E<br>MOBILIDADE<br>URBANA</div><div class="badge-tv">TV CÂMARA<small>CAMPINA GRANDE • 64ª SESSÃO 26/08/2026</small></div><span class="dur">10:28</span></div><div class="vpad"><h3>Jean Pierre defende o VLT e a mobilidade urbana — 64ª Sessão</h3><p>Fiscalização e propostas para o transporte de Campina Grande.</p></div></article>
+<article class="vcard"><div class="thumb"><img src="assets/posse-3.jpg" alt="Semana da Pátria"><div class="overlay">SEMANA<br>DA PÁTRIA</div><div class="badge-tv">TV CÂMARA<small>CAMPINA GRANDE • 67ª SESSÃO 02/09/2026</small></div><span class="dur">8:15</span></div><div class="vpad"><h3>Jean Pierre destaca a programação do 7 de Setembro — 67ª Sessão</h3><p>Valorização cívica e agenda da cidade.</p></div></article>
+</div>
+</div>
 </section>
 
-<section id="trajetoria">
-  <div class="container">
-    <div class="sec-head"><div class="eyebrow">Linha do tempo</div><h2>Trajetória pública</h2><p>Resumo cronológico com base em registros oficiais. Para biografia completa, o gabinete pode complementar.</p></div>
-    <div class="grid2">
-      <div class="timeline">
-        <div class="t-item"><small>2023 — 2024 • SECTI CAMPINA GRANDE</small><b>Secretaria de Ciência, Tecnologia e Inovação</b>Integra equipe da SECTI. Atua em iniciativas como Impulse Campina e curso de letramento digital / Lan Houses Sociais (Liberdade e Feira Central).</div>
-        <div class="t-item"><small>06/10/2024 • ELEIÇÕES MUNICIPAIS</small><b>Candidato a vereador pelo Avante — 70.777</b>Disputa vaga na Câmara entre 357 candidatos. Avante elege Pastor Luciano Breno (2.752 votos). Jean Pierre fica suplente da bancada.</div>
-        <div class="t-item"><small>01/01/2025 • LEGISLATURA 2025-2028</small><b>Início da legislatura na Casa de Félix Araújo</b>Câmara com 23 vereadores. Pastor Luciano Breno assume mandato e comissões (Finanças e Ciência/Tecnologia). Jean Pierre segue na base e no diálogo comunitário.</div>
-        <div class="t-item"><small>20/08/2026 • 62ª SESSÃO ORDINÁRIA</small><b>Posse como Vereador</b>Juramento no plenário, presidido por Saulo Germano. Discurso: gratidão à família, ao avô e a Campina; compromisso com mandato propositivo. “Palavra dada é palavra cumprida”, celebra Pr. Luciano Breno.</div>
-        <div class="t-item"><small>AGORA • GABINETE EM EXERCÍCIO</small><b>Mandato em construção com você</b>Requerimentos, projetos de lei, visitas a bairros e distritos, audiências e prestação de contas. Envie sua demanda abaixo.</div>
-      </div>
-      <div>
-        <div class="card">
-          <span class="tag">Frases da posse — para guardar</span>
-          <h3>“Quero contribuir com a minha cidade, por gratidão por tudo que já vivenciei”</h3>
-          <p>Trechos do discurso de 20/08/2026 (DIVICOM/CMCG via Paraíba 24 Horas):</p>
-          <div class="quote">“Chegando a esta Casa, quero dizer aos meus pares, aos meus eleitores e à sociedade campinense: contem com o vereador Jean Pierre.”</div>
-          <div class="quote">“Eu quero ser relevante em minhas proposituras, fazer um mandato propositivo.”</div>
-          <p style="font-size:.85rem">Fonte: <a href="https://www.paraiba24horas.com.br/noticia/suplente-jean-pierre-toma-posse-como-vereador-na-cmcg" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">Paraíba 24 Horas (20/08/2026)</a> • Fotos Josenildo Costa/CMCG</p>
-          <a class="btn" style="margin-top:12px" href="#contato"><i class="fa-solid fa-paper-plane"></i> Participar do mandato</a>
-        </div>
-        <div class="card" style="margin-top:16px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border:0">
-          <h3 style="color:#fff">Projetos-modelo do gabinete</h3>
-          <p style="color:#cbd8f0">Sugestões editáveis para os primeiros 90 dias:</p>
-          <ul class="check" style="color:#e6edff">
-            <li><i class="fa-solid fa-circle-check" style="color:#5eead4"></i><span>PL QR Code Procon (apoio ao PL 625/2026 de Luciano Breno)</span></li>
-            <li><i class="fa-solid fa-circle-check" style="color:#5eead4"></i><span>Programa Jovem Tech CG — bolsas em cursos SECTI + estágio</span></li>
-            <li><i class="fa-solid fa-circle-check" style="color:#5eead4"></i><span>Mutirão de letramento digital para 60+ nos CRAS e clubes de mães</span></li>
-            <li><i class="fa-solid fa-circle-check" style="color:#5eead4"></i><span>Gabinete Itinerante semanal nos bairros e distritos</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="playlists">
+<div class="container">
+<div class="sec-head"><div><div class="eyebrow">Organizado por tema</div><h2>Playlists do mandato</h2></div></div>
+<div class="pgrid">
+<div class="plist pl-navy"><i class="fa-solid fa-podium"></i><span>Pronunciamentos na Tribuna<br><small>3 vídeos</small></span></div>
+<div class="plist pl-green"><i class="fa-solid fa-file-lines"></i><span>Projetos e Requerimentos<br><small>Ver playlist</small></span></div>
+<div class="plist pl-gold"><i class="fa-solid fa-location-dot"></i><span>Ações nos Bairros<br><small>Ver playlist</small></span></div>
+<div class="plist pl-dark"><i class="fa-solid fa-chart-column"></i><span>Prestação de Contas<br><small>Ver playlist</small></span></div>
+<div class="plist pl-forest"><i class="fa-solid fa-landmark"></i><span>Sessões da Câmara<br><small>Ver playlist</small></span></div>
+</div>
+</div>
 </section>
 
-<section id="noticias" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="container">
-    <div class="sec-head"><div class="eyebrow">Notícias</div><h2>Destaques do mandato e da Câmara</h2><p>Notícias reais com link para a fonte original. O gabinete pode publicar novas matérias na <a href="noticias.html" style="color:var(--blue);font-weight:800">página de Notícias editável</a> e acompanhar <a href="proposituras.html" style="color:var(--blue);font-weight:800">Proposituras</a>.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><a href="noticias.html" class="btn" style="padding:10px 16px"><i class="fa-solid fa-newspaper"></i> Todas as notícias + painel do gabinete</a><a href="proposituras.html" class="btn btn-outline" style="padding:10px 16px"><i class="fa-solid fa-scale-balanced"></i> Ver proposituras</a></div></div>
-    <div class="grid3">
-      <article class="card news-card">
-        <img src="assets/posse-3.jpg" alt="Vereador Jean Pierre empossado ao lado de colegas">
-        <div class="pad"><span class="tag">Posse • 20/08/2026</span><h3>Suplente Jean Pierre toma posse como vereador na CMCG</h3><p>Empossado na 62ª Sessão Ordinária no lugar de Pastor Luciano Breno, que assumiu o Procon Municipal. Juramento, homenagens à família e mandato propositivo.</p><div class="meta"><span><i class="fa-regular fa-calendar"></i> 20/08/2026</span><span><i class="fa-solid fa-camera"></i> Josenildo Costa/CMCG</span></div><a href="https://www.paraiba24horas.com.br/noticia/suplente-jean-pierre-toma-posse-como-vereador-na-cmcg" target="_blank" rel="noopener" class="btn" style="margin-top:12px;padding:10px 16px">Ler fonte original</a></div>
-      </article>
-      <article class="card news-card">
-        <img src="assets/tech.jpg" alt="Tecnologia e inovação em Campina Grande">
-        <div class="pad"><span class="tag">Tecnologia • SECTI</span><h3>De onde vem a bandeira tech: Impulse e letramento digital</h3><p>SECTI mantém 500 vagas em cursos gratuitos (IA, Python, redes, design), Lan Houses Sociais e TECH Itinerante para idosos nos CRAS — base da atuação de Jean Pierre.</p><div class="meta"><span><i class="fa-solid fa-building"></i> PMCG / SECTI</span></div><a href="https://campinagrande.pb.gov.br/secti-lanca-500-vagas-para-cursos-gratuitos-na-area-de-tecnologia-em-campina-grande" target="_blank" rel="noopener" class="btn" style="margin-top:12px;padding:10px 16px">Ver cursos SECTI</a></div>
-      </article>
-      <article class="card news-card">
-        <img src="assets/posse-1.jpg" alt="Plenário da Câmara Municipal">
-        <div class="pad"><span class="tag">Legislativo • SAPL</span><h3>Acompanhe requerimentos, PLs e sessões ao vivo</h3><p>Toda matéria do vereador tramita no SAPL e as sessões são transmitidas pela TV Câmara. Transparência total: pauta, atas, votações e relatórios.</p><div class="meta"><span><i class="fa-solid fa-tv"></i> TV Câmara CG</span></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener" class="btn btn-outline" style="padding:10px 14px">Abrir SAPL</a><a href="https://www.camaracg.pb.gov.br/vereadores/" target="_blank" rel="noopener" class="btn" style="padding:10px 14px">Vereadores CMCG</a></div></div>
-      </article>
-    </div>
-  </div>
+<section id="sobre" style="background:#fff;border-top:1px solid var(--line)">
+<div class="container grid2">
+<div><div class="about-img"><img src="assets/posse-1.jpg" alt="Vereador Jean Pierre em sessão"></div>
+<p style="font-size:.78rem;color:var(--muted);margin-top:8px">Foto: Josenildo Costa / CMCG — 62ª Sessão Ordinária, 20/08/2026.</p></div>
+<div>
+<div class="eyebrow">Sobre o mandato</div>
+<h2 style="color:var(--navy);font-size:1.7rem;margin:6px 0 10px">Compromisso com as pessoas e com o futuro de Campina Grande</h2>
+<p style="color:var(--muted)">Canal e site oficiais do Vereador Jean Pierre na Câmara Municipal de Campina Grande/PB. Aqui você acompanha pronunciamentos na tribuna, projetos de lei, requerimentos, fiscalizações e ações nos bairros.</p>
+<ul class="check">
+<li><i class="fa-solid fa-circle-check"></i><span><strong>Posse:</strong> 20/08/2026, 62ª Sessão Ordinária da Casa de Félix Araújo.</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span><strong>Em pauta:</strong> VLT e mobilidade urbana (64ª Sessão) e Semana da Pátria (67ª Sessão).</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span><strong>Transparência:</strong> matérias no SAPL, sessões na TV Câmara e prestação de contas por playlist.</span></li>
+</ul>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+<a class="btn" href="proposituras.html"><i class="fa-solid fa-file-lines"></i> Projetos e requerimentos</a>
+<a class="btn btn-outline" href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener">Abrir SAPL</a>
+</div>
+</div>
+</div>
 </section>
 
-<section id="galeria">
-  <div class="container">
-    <div class="sec-head"><div class="eyebrow">Galeria</div><h2>Fotos do mandato</h2><p>Fotos oficiais da posse (CMCG) + imagens ilustrativas de Campina Grande. Clique para ampliar. Crédito obrigatório: Josenildo Costa/CMCG.</p></div>
-    <div class="gal">
-      <figure><a href="assets/posse-1.jpg" target="_blank" rel="noopener"><img src="assets/posse-1.jpg" alt="Posse Jean Pierre foto 1"></a><figcaption>Posse 20/08/2026 • Plenário • Foto: Josenildo Costa/CMCG</figcaption></figure>
-      <figure><a href="assets/posse-2.jpg" target="_blank" rel="noopener"><img src="assets/posse-2.jpg" alt="Posse Jean Pierre foto 2"></a><figcaption>Juramento na Casa de Félix Araújo • CMCG</figcaption></figure>
-      <figure><a href="assets/posse-3.jpg" target="_blank" rel="noopener"><img src="assets/posse-3.jpg" alt="Posse Jean Pierre foto 3"></a><figcaption>Com pares e secretário Luciano Breno • CMCG</figcaption></figure>
-      <figure><img src="assets/sao-joao.jpg" alt="São João de Campina Grande ilustrativo"><figcaption>Campina Grande • Maior São João do Mundo (ilustrativa)</figcaption></figure>
-      <figure><img src="assets/campina-centro.jpg" alt="Centro de Campina Grande ilustrativo"><figcaption>Açude Velho e Centro • cidade do trabalho (ilustrativa)</figcaption></figure>
-      <figure><img src="assets/tech.jpg" alt="Juventude e tecnologia ilustrativo"><figcaption>Juventude tech • Impulse Campina (ilustrativa)</figcaption></figure>
-    </div>
-  </div>
+<section id="contato">
+<div class="container">
+<div class="sec-head"><div><div class="eyebrow">Fale com o gabinete</div><h2>Envie sua demanda do bairro</h2><p>Mensagem vai direto ao WhatsApp do gabinete. E-mail oficial abaixo.</p></div></div>
+<div class="grid2">
+<div>
+<div class="info"><i class="fa-solid fa-location-dot"></i><span><strong>Casa de Félix Araújo</strong><br>Rua Santa Clara, s/n – São José, Campina Grande/PB • CEP 58400-540</span></div>
+<div class="info"><i class="fa-solid fa-envelope"></i><span><strong>E-mail oficial</strong><br><a href="mailto:gab.jeanpierre@campinagrande.pb.leg.br" style="color:var(--blue);font-weight:700">gab.jeanpierre@campinagrande.pb.leg.br</a></span></div>
+<div class="info"><i class="fa-solid fa-scale-balanced"></i><span><strong>SAPL</strong><br><a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">sapl.campinagrande.pb.leg.br</a> — matérias, pautas e atas</span></div>
+<div class="info"><i class="fa-brands fa-youtube"></i><span><strong>TV Câmara</strong><br><a href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">Acompanhe as sessões ao vivo</a></span></div>
+</div>
+<form onsubmit="enviar(event)">
+<div class="row2"><div><label>Nome</label><input id="c-nome" required placeholder="Seu nome"></div><div><label>Telefone</label><input id="c-fone" placeholder="(83) 9 9999-9999"></div></div>
+<div class="row2"><div><label>Bairro / Distrito</label><input id="c-bairro" placeholder="Ex.: Liberdade, Catolé, Galante"></div><div><label>Assunto</label><select id="c-assunto"><option>Projetos</option><option>Fiscalização</option><option>Ações nos bairros</option><option>Resultados / Prestação de contas</option><option>Outro</option></select></div></div>
+<div><label>Mensagem</label><textarea id="c-msg" rows="5" required placeholder="Rua, ponto de referência e o que precisa..."></textarea></div>
+<button class="btn" type="submit"><i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp</button>
+<p id="ok" style="display:none;background:#e8f3ff;border:1px solid #bcd0f5;color:#0a2a5c;padding:10px 14px;border-radius:10px;font-size:.85rem">Abrimos o WhatsApp com sua mensagem. Número em <code>assets/config.js</code>.</p>
+</form>
+</div>
+</div>
 </section>
 
-<section id="videos" style="padding-top:0">
-  <div class="container">
-    <div class="video-wrap">
-      <div class="video-frame"><iframe src="https://www.youtube.com/embed/?listType=user_uploads&list=CamaraCGOficial" title="TV Câmara Campina Grande - vídeos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-      <div>
-        <div class="eyebrow" style="color:var(--orange2)">Vídeos</div>
-        <h2 style="margin:8px 0 10px">Assista às sessões e pronunciamentos</h2>
-        <p style="color:#cbd8f0">A Câmara transmite ao vivo pelo site e YouTube. Reveja a 62ª Sessão Ordinária (posse em 20/08/2026) e acompanhe as falas do vereador Jean Pierre no plenário.</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-          <a class="btn" href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> @CamaraCGOficial</a>
-          <a class="btn btn-outline" style="background:#fff" href="https://www.camaracg.pb.gov.br/tvcamara/" target="_blank" rel="noopener"><i class="fa-solid fa-tv"></i> TV Câmara ao vivo</a>
-          <a class="btn btn-outline" style="background:transparent;color:#fff;border-color:#fff" href="https://www.camaracg.pb.gov.br/videos/" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play"></i> Arquivo de vídeos</a>
-        </div>
-        <p style="font-size:.8rem;color:#8fa3c8;margin-top:12px">Dica de modelo: troque o iframe acima pelo ID do vídeo da posse quando publicado, ex.: youtube.com/watch?v=SEU_VIDEO</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contato" style="background:#fff;border-top:1px solid var(--line)">
-  <div class="container">
-    <div class="sec-head"><div class="eyebrow">Participação cidadã</div><h2>Fale com o vereador Jean Pierre</h2><p>Envie demandas do seu bairro, sugestões de projetos ou convites. Modelo demonstrativo — ligue o formulário a um e-mail/WhatsApp do gabinete.</p></div>
-    <div class="contact-grid">
-      <div class="card">
-        <h3>Gabinete na Câmara</h3>
-        <p>Atendimento presencial e itinerante. Traga sua demanda com fotos, endereço e ponto de referência.</p>
-        <div class="info-list">
-          <div><i class="fa-solid fa-location-dot"></i><span><strong>Casa de Félix Araújo</strong><br>Rua Santa Clara, s/n – São José<br>Campina Grande/PB • CEP 58400-540</span></div>
-          <div><i class="fa-solid fa-phone"></i><span><strong>(83) 3315-6300</strong><br><a href="mailto:gab.jeanpierre@campinagrande.pb.leg.br" style="color:var(--blue);font-weight:700">gab.jeanpierre@campinagrande.pb.leg.br</a><br>Seg-qui 8h-17h • Sex 8h-13h</span></div>
-          <div><i class="fa-solid fa-scale-balanced"></i><span><strong>Transparência:</strong> matérias no <a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">SAPL</a> • notícias no <a href="https://www.camaracg.pb.gov.br" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">Portal CMCG</a></span></div>
-          <div><i class="fa-solid fa-share-nodes"></i><span><strong>Redes (modelo):</strong> @jeanpierre.cg (Instagram) • @CamaraCGOficial • atualize com os perfis oficiais do vereador</span></div>
-        </div>
-      </div>
-      <form onsubmit="enviar(event)">
-        <div class="row2"><div><label>Nome completo</label><input id="c-nome" required placeholder="Seu nome"></div><div><label>WhatsApp / Telefone</label><input id="c-fone" placeholder="(83) 9 9999-9999"></div></div>
-        <div class="row2"><div><label>Bairro / Distrito</label><input id="c-bairro" placeholder="Ex.: Liberdade, Catolé, Galante..."></div><div><label>Assunto</label><select id="c-assunto"><option>Infraestrutura e obras</option><option>Saúde</option><option>Educação / Juventude / Tecnologia</option><option>Defesa do consumidor</option><option>Outro</option></select></div></div>
-        <div><label>Sua mensagem</label><textarea id="c-msg" rows="5" required placeholder="Descreva a demanda, rua, ponto de referência e sugestão..."></textarea></div>
-        <button class="btn" type="submit"><i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp do gabinete</button>
-        <p id="ok" style="display:none;background:#e8faf1;border:1px solid #a7e8c6;color:#0a6b45;padding:10px 14px;border-radius:10px;font-size:.88rem">Mensagem pronta! Abrimos o WhatsApp do gabinete com seu texto. É só apertar enviar por lá. Número configurado em <code>assets/config.js</code>.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="cols">
-      <div><h4><span style="background:var(--orange);padding:2px 8px;border-radius:8px;color:#fff">JP 70</span> Vereador Jean Pierre</h4><p style="font-size:.88rem">Mandato propositivo • Avante Campina Grande-PB • Casa de Félix Araújo. Site <strong>modelo institucional</strong> para demonstração — sem vínculo oficial com a Câmara ou partido.</p><div class="social"><a href="https://www.instagram.com/camaracgoficial/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.facebook.com/camaracgoficial" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://x.com/camaracgoficial" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
-      <div><h4>Navegação</h4><a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#trajetoria">Trajetória</a><a href="#noticias">Notícias</a><a href="#contato">Contato</a></div>
-      <div><h4>Institucional</h4><a href="https://www.camaracg.pb.gov.br/vereadores/" target="_blank" rel="noopener">Vereadores CMCG</a><a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener">SAPL – Matérias</a><a href="https://www.camaracg.pb.gov.br/transparencia" target="_blank" rel="noopener">Transparência</a><a href="https://campinagrande.pb.gov.br" target="_blank" rel="noopener">Prefeitura CG</a></div>
-      <div><h4>Fontes desta página</h4><a href="https://www.paraiba24horas.com.br/noticia/suplente-jean-pierre-toma-posse-como-vereador-na-cmcg" target="_blank" rel="noopener">Posse – Paraíba 24h 20/08/2026</a><a href="https://www.estadao.com.br/politica/eleicoes/2024/veja-quem-sao-candidatos-prefeito-vereador-pb-campina-grande" target="_blank" rel="noopener">Candidatura 70777 – TSE/Estadão</a><a href="https://g1.globo.com/pb/paraiba/eleicoes/2024/noticia/2024/10/06/veja-os-23-vereadores-eleitos-em-2024-e-composicao-da-camara-municipal-de-campina-grande.ghtml" target="_blank" rel="noopener">Eleitos 2024 – G1 PB</a></div>
-    </div>
-    <div class="copy"><span>© 2026 Gabinete Modelo Vereador Jean Pierre • Avante 70 • Campina Grande-PB. Fotos da posse: Josenildo Costa/CMCG.</span><span>Feito como modelo — personalize textos, fotos, redes e contato antes de publicar.</span></div>
-  </div>
-</footer>
-<a class="whats" id="whatsFloat" href="https://wa.me/5583999999999?text=Ol%C3%A1%2C%20gabinete%20do%20vereador%20Jean%20Pierre!%20Quero%20enviar%20uma%20demanda." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<footer><div class="container">
+<div class="cols">
+<div><h4>Vereador Jean Pierre</h4><p>Trabalho, diálogo e resultados por uma Campina Grande mais forte. Site modelo do mandato.</p></div>
+<div><h4>Ações</h4><a href="#acoes">Projetos</a><a href="#acoes">Fiscalização</a><a href="#acoes">Ações nos bairros</a><a href="#acoes">Resultados</a></div>
+<div><h4>Mandato</h4><a href="proposituras.html">Projetos e requerimentos</a><a href="noticias.html">Notícias</a><a href="https://sapl.campinagrande.pb.leg.br" target="_blank" rel="noopener">SAPL</a><a href="https://www.camaracg.pb.gov.br" target="_blank" rel="noopener">Portal CMCG</a></div>
+<div><h4>Contato</h4><a href="mailto:gab.jeanpierre@campinagrande.pb.leg.br">gab.jeanpierre@campinagrande.pb.leg.br</a><a href="https://www.youtube.com/@CamaraCGOficial" target="_blank" rel="noopener">TV Câmara no YouTube</a></div>
+</div>
+<div class="copy"><span>© 2026 Gabinete Vereador Jean Pierre • Campina Grande/PB • Fotos: Josenildo Costa/CMCG</span><span>Campina Grande, sempre em frente!</span></div>
+</div></footer>
+<a class="whats" id="whatsFloat" href="https://wa.me/5583999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <script src="assets/config.js"></script>
 <script>
-const CFG = (typeof SITE_CONFIG !== 'undefined') ? SITE_CONFIG : { whatsapp: "5583999999999" };
-// aplica WhatsApp configurado ao botão flutuante
-document.getElementById('whatsFloat').href = "https://wa.me/" + CFG.whatsapp + "?text=" + encodeURIComponent("Olá, gabinete do vereador Jean Pierre! Quero enviar uma demanda.");
-function enviar(e){
-  e.preventDefault();
-  const nome = document.getElementById('c-nome').value.trim();
-  const fone = document.getElementById('c-fone').value.trim();
-  const bairro = document.getElementById('c-bairro').value.trim();
-  const assunto = document.getElementById('c-assunto').value;
-  const msg = document.getElementById('c-msg').value.trim();
-  const texto = "DEMADA SITE JP70%0A%0A" + encodeURIComponent("Nome: ") + encodeURIComponent(nome) + "%0A" + encodeURIComponent("Fone: ") + encodeURIComponent(fone) + "%0A" + encodeURIComponent("Bairro: ") + encodeURIComponent(bairro) + "%0A" + encodeURIComponent("Assunto: ") + encodeURIComponent(assunto) + "%0A%0A" + encodeURIComponent(msg);
-  // monta sem dupla codificação do cabeçalho:
-  const final = "https://wa.me/" + CFG.whatsapp + "?text=" + encodeURIComponent("DEMANDA SITE JP70\n\nNome: "+nome+"\nFone: "+fone+"\nBairro: "+bairro+"\nAssunto: "+assunto+"\n\n"+msg);
-  window.open(final, "_blank");
-  document.getElementById('ok').style.display='block';
-  e.target.querySelector('button').innerHTML='<i class="fa-solid fa-check"></i> Aberto no WhatsApp! Obrigado, '+nome.split(' ')[0]+'!';
-}
+const CFG=(typeof SITE_CONFIG!=='undefined')?SITE_CONFIG:{whatsapp:"5583999999999"};
+document.getElementById('whatsFloat').href="https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent("Olá, gabinete do vereador Jean Pierre! Quero enviar uma demanda.");
+function enviar(e){e.preventDefault();
+const n=document.getElementById('c-nome').value.trim(),f=document.getElementById('c-fone').value.trim(),b=document.getElementById('c-bairro').value.trim(),a=document.getElementById('c-assunto').value,m=document.getElementById('c-msg').value.trim();
+window.open("https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent("DEMANDA SITE JP\n\nNome: "+n+"\nFone: "+f+"\nBairro: "+b+"\nAssunto: "+a+"\n\n"+m),"_blank");
+document.getElementById('ok').style.display='block';}
 document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
 </script>
 </body>

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="120" height="72" role="img" aria-label="Avante 70 - logo modelo">
-  <rect x="2" y="2" width="196" height="116" rx="18" fill="#0A1F3D"/>
-  <path d="M25 82 L55 28 L75 28 L45 82 Z" fill="#2EA3E8"/>
-  <path d="M55 82 L85 28 L105 28 L75 82 Z" fill="#FF6A00"/>
-  <text x="112" y="62" font-family="Arial, sans-serif" font-weight="900" font-size="30" fill="#FFFFFF">AVANTE</text>
-  <rect x="112" y="70" width="62" height="22" rx="11" fill="#FF6A00"/>
-  <text x="143" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#fff">70</text>
-  <text x="100" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#9FB3D8">LOGO MODELO • USO DEMONSTRATIVO</text>
-</svg>
